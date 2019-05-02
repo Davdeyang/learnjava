@@ -4,7 +4,7 @@ public class TestArray{
     public static void main(String args[]) {
         System.out.println("sdfsf");
         int arr[] = {1,8,3,2,5};
-        A a = new A();
+        TestArray a = new TestArray();
         //int c = a.ddd(arr);
         //System.out.println(c);
         //a.tt();
