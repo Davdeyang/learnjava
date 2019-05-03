@@ -8,12 +8,15 @@ public class TestArray {
         // int c = a.ddd(arr);
         // System.out.println(c);
         // a.tt();
-        //int d = a.max(arr);
-        //System.out.println(d);
-        //int e = a.summation();
-        //System.out.println(e);
-        int r = a.substraction(6000);
-        System.out.println (r);
+        // int d = a.max(arr);
+        // System.out.println(d);
+        // int e = a.summation();
+        // System.out.println(e);
+        // int r = a.substraction(6000);
+        // System.out.println (r);
+        int r  = a.reversal(123);
+        System.out.println(r);
+
     }
 
     public void stata() {
@@ -59,8 +62,10 @@ public class TestArray {
         }
         return max;
     }
+
     /**
      * 数字的求和
+     * 
      * @return
      */
     public int summation() {
@@ -70,15 +75,29 @@ public class TestArray {
         }
         return summation;
     }
+
     /**
      * 传一个数 然后把减去剩下的值 返回
+     * 
      * @param num
      * @return
      */
-    public int substraction(int num){ 
-        for(int i=100;num>=i&&i>0;i--){
-            num= num-i;
+    public int substraction(int num) {
+        for (int i = 100; num >= i && i > 0; i--) {
+            num = num - i;
         }
         return num;
+    }
+    /**
+     * 数字的反转
+     * @param a
+     * @return
+     */
+    public int reversal(int a){
+        int num = a;
+        int i=num/100;
+        int j=num%100/10;
+        int k=num%10;
+        return  k*100+j*10+i;
     }
 }
