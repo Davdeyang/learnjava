@@ -2,6 +2,9 @@
 public class TestArray {
 
     public static void main(String args[]) {
+
+        double db = 3.34;
+        int int1 = 123 / 100;
         System.out.println("sdfsf");
         int arr[] = { 1, 8, 3, 2, 5 };
         TestArray a = new TestArray();
@@ -14,8 +17,9 @@ public class TestArray {
         // System.out.println(e);
         // int r = a.substraction(6000);
         // System.out.println (r);
-        int r  = a.reversal(123);
-        System.out.println(r);
+        //int r = a.reversal(456);
+        //System.out.println(r);
+        a.find();
 
     }
 
@@ -88,16 +92,32 @@ public class TestArray {
         }
         return num;
     }
+
     /**
      * 数字的反转
+     * 
      * @param a
      * @return
      */
-    public int reversal(int a){
-        int num = a;
-        int i=num/100;
-        int j=num%100/10;
-        int k=num%10;
-        return  k*100+j*10+i;
+    public int reversal(int num) {
+
+        int i = num / 100;// 隐式转换
+        int j = num % 100 / 10;
+        int k = num % 10;
+        return k * 100 + j * 10 + i;
+    }
+    /**
+     * 水先花数
+     */
+    public void find(){
+        int a,b,c ;
+        for(int i=100;i<1000;i++){
+            a=i/100;
+            b=i%100/10;
+            c=i%10;
+            if(Math.pow(a,3)+Math.pow(b, 3)+Math.pow(c, 3) == i ){
+                System.out.println(i);
+            }
+        }
     }
 }
