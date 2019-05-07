@@ -20,6 +20,7 @@ public class TestArray {
         //int r = a.reversal(456);
         //System.out.println(r);
         a.find();
+        a.square(10);
 
     }
 
@@ -118,6 +119,23 @@ public class TestArray {
             if(Math.pow(a,3)+Math.pow(b, 3)+Math.pow(c, 3) == i ){
                 System.out.println(i);
             }
+        }
+    }
+    public void exchange(int a, int b){
+        int temp = a;
+        a = b;
+        b = temp;
+    }
+    /**
+     * 正方形的打印
+     * @param n
+     */
+    public void square(int n){
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                System.out.print("*");
+            }
+            System.out.println();//每次循环结束 换行
         }
     }
 }
