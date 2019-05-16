@@ -42,6 +42,7 @@ public class Closure {
                 }
             }
         }
+        System.out.println();
         System.out.println("排序后的数组为");
         for (int num : arr1) {
             System.out.println(num+"");
