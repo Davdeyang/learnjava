@@ -37,5 +37,9 @@ public class Sort {
         }
         return arr;
     }
+    public int [] insertSort(int [] arr,String sortType){
+
+        return arr;
+    }
 
 }

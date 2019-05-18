@@ -17,6 +17,8 @@ public class Closure {
         int arr[] = { 3, 34, 34, 5, 35, 35 };
         int arr1[] = { 2, 7, 4, 5, 3, 6 };
         c1.sort(arr1);
+
+        
     }
     // 静态方法或者类方法 不用实例化就可以 类名.方法调用
     static void test() {
